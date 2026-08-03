@@ -1,0 +1,63 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 60px;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo h2 {
+  margin: 0;
+  font-size: 32px;
+  color: #1d3557;
+}
+
+.company-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.nav {
+  display: flex;
+  gap: 25px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+
+.login-btn {
+  background-color: #1d3557;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.menu-btn {
+  display: none;
+  font-size: 25px;
+  border: none;
+  background: none;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 15px 20px;
+  }
+
+  .company-name,
+  .nav,
+  .login-btn {
+    display: none;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+}
